@@ -80,10 +80,35 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-.content-container div {
+.content-container > div {
   display:inline-block;
   width: 50%;
   height: 0;
   padding-bottom: 50%;
   background-color: yellow;
+}
+
+/*to center content*/
+.dummy {
+  padding-top: 45%;
+}
+/*---*/
+
+.content-container > div h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content-container > div p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.content-container > div:nth-child(3n+0) {
+  display:inline-block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background-color: red;
 }
