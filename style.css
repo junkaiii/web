@@ -1,20 +1,20 @@
 body {
   font-family: 'Raleway', sans-serif;
-  width: 1600px;
-  max-width: 90%;
+  width: 1800px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
-h1 {
+h1 h2 p{
   color: #212121;
 }
 
 nav {
-  width: 1600px;
-  max-width: 90%;
+  width: 1800px;
+  max-width: 95%;
   height: 60px;
   position: relative;
-  background-color: #c1c1c1;
+  /*background-color: #c1c1c1;*/
   margin: 20px auto;
 }
 
@@ -52,16 +52,16 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.hero {
-  width: 1600px;
-  max-width: 90%;
+.index-hero {
+  width: 1800px;
+  max-width: 95%;
   position: relative;
   background-color: pink;
   margin: 20px auto;
   padding: 75px 0 100px;
 }
 
-.hero h1 {
+.index-hero h1 {
   width: 1000px;
   max-width: 70%;
   display: block;
@@ -71,16 +71,16 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.content-container {
-  width: 1600px;
-  max-width: 90%;
+.index-content-container {
+  width: 1800px;
+  max-width: 95%;
   background-color: #c1c1c1;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.content-container > div {
+.index-content-container > div {
   display:inline-block;
   width: 50%;
   height: 0;
@@ -91,18 +91,22 @@ nav ul li a:hover {
 /*to center content*/
 .dummy {
   padding-top: 45%;
+  width: 50%;
+  display: inline-block;
 }
 /*---*/
 
-.content-container > div h1 {
+.index-content-container > div h1 {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
+  z-index: 2
 }
 
-.content-container > div p {
+.index-content-container > div p {
   text-align: center;
   font-size: 18px;
+  z-index: 2
 }
 
 .content-container > div:nth-child(3n+0) {
@@ -111,4 +115,63 @@ nav ul li a:hover {
   height: 0;
   padding-bottom: 50%;
   background-color: red;
+}
+
+#index-hello-world {
+  background-color: #1F1F21;
+  /*background-image: url(images/portrait-black.jpg);*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#index-hello-world h1 {
+  color: #797979;
+}
+
+#index-jiak-simi {
+  background-color: #87e4ed;
+  /*background-image: url(images/hamburger.gif);
+  background-size: 400px 400px;*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#index-jiak-simi h1 {
+  color: #797979;
+}
+
+.about-hero {
+  width: 1800px;
+  max-width: 95%;
+  position: relative;
+  background-color: pink;
+  margin: 20px auto;
+  padding: 70px 0 75px;
+}
+
+.about-hero h2 {
+  width: 1000px;
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.about-content-container {
+  width: 1800px;
+  max-width: 95%;
+  background-color: #c1c1c1;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img{
+  background-image: url(images/desk5.jpg);
+  width: 1800px;
+  height: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
