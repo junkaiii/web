@@ -5,8 +5,12 @@ body {
   margin: 0 auto;
 }
 
-h1 h2 p{
+h1, h2, p, a{
   color: #212121;
+}
+
+a, p{
+  text-decoration: none;
 }
 
 nav {
@@ -62,8 +66,8 @@ nav ul li a:hover {
 }
 
 .index-hero h1 {
-  width: 1000px;
-  max-width: 70%;
+  width: 1100px;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
   font-size: 80px;
@@ -80,7 +84,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-.index-content-container > div {
+.index-content {
   display:inline-block;
   width: 50%;
   height: 0;
@@ -88,28 +92,7 @@ nav ul li a:hover {
   background-color: yellow;
 }
 
-/*to center content*/
-.dummy {
-  padding-top: 45%;
-  width: 50%;
-  display: inline-block;
-}
-/*---*/
-
-.index-content-container > div h1 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  z-index: 2
-}
-
-.index-content-container > div p {
-  text-align: center;
-  font-size: 18px;
-  z-index: 2
-}
-
-.content-container > div:nth-child(3n+0) {
+.index-content-container > a:nth-child(3n+0) {
   display:inline-block;
   width: 100%;
   height: 0;
@@ -117,11 +100,44 @@ nav ul li a:hover {
   background-color: red;
 }
 
+/*to center content*/
+.dummy {
+  padding-top: 45%;
+  width: 100%;
+  display: inline-block;
+}
+
+.index-content-container > a:nth-child(3n+0) > div {
+  padding-top: 23%;
+  width: 100%;
+  display: inline-block;
+}
+/*---*/
+
+.index-content h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  z-index: 2
+}
+
+.index-content p {
+  text-align: center;
+  font-size: 18px;
+  z-index: 2
+}
+
+
 #index-hello-world {
   background-color: #1F1F21;
-  /*background-image: url(images/portrait-black.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+#index-hello-world:hover {
+  /*background-image: url(images/portrait-black.jpg);*/
+  background-image: url(images/helloworld2.gif);
 }
 
 #index-hello-world h1 {
@@ -130,15 +146,65 @@ nav ul li a:hover {
 
 #index-jiak-simi {
   background-color: #87e4ed;
-  /*background-image: url(images/hamburger.gif);
-  background-size: 400px 400px;*/
+  /*background-image: url(images/happy_pizza.gif);*/
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
+  background-size: cover;
+}
+
+#index-jiak-simi:hover {
+  background-image: url(images/happy_pizza.gif);
 }
 
 #index-jiak-simi h1 {
   color: #797979;
 }
+
+#index-yoda-speaks {
+  background-repeat: no-repeat;
+  background-position: -300px 0px;
+  background-size: cover;
+}
+
+#index-yoda-speaks:hover {
+  background-image: url(images/yoda2.gif);
+}
+
+#index-yoda-speaks h1 {
+  color: #797979;
+}
+
+#index-tom-jerry {
+  background-color: #6DAC70;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+#index-tom-jerry:hover {
+  background-image: url(images/tomjerry2.gif);
+}
+
+#index-tom-jerry h1 {
+  color: #797979;
+}
+
+#index-queuer {
+  background-color: #CB4E4C;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  background-position: -200px 0px;
+}
+
+#index-queuer:hover {
+  background-image: url(images/queuer2.gif);
+}
+
+#index-queuer h1 {
+  color: #797979;
+}
+
 
 .about-hero {
   width: 1800px;
@@ -170,11 +236,14 @@ nav ul li a:hover {
 }
 
 .img {
-  background-image: url(images/desk5.jpg);
   width: 1800px;
+  background-repeat: no-repeat;
+}
+
+#about-img {
+  background-image: url(images/desk5.jpg);
   height: 800px;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .about-content-container > div {
@@ -200,7 +269,7 @@ nav ul li a:hover {
   font-size: 20px;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
 }
 
@@ -208,18 +277,90 @@ nav ul li a:hover {
   -webkit-border-radius: 27;
   -moz-border-radius: 27;
   border-radius: 27px;
-  font-family: Arial;
+  padding: 20px 45px 20px 45px;
+  background: #ffffff;
+  border: solid #75d8cb 3px;
+  text-decoration: none;
+  margin: 30px auto 160px;;
+  display: block;
   color: #4d4d4d;
   font-size: 20px;
-  background: #ffffff;
-  padding: 10px 20px 10px 20px;
-  border: solid #1f628d 2px;
-  text-decoration: none;
-  margin: 0 auto;
-  display: block;
 }
 
-.btn:hover {
-  background: #3cb0fd;
+.btn {
+
+  padding: 20px 45px 20px 45px;
+}
+
+.btn-hover {
+  background: #75d8cb;
   text-decoration: none;
+  color: #fff;
+}
+
+.btn-hover a {
+  color: #fff;
+  font-size: 20px;
+}
+
+/*strong {
+  font-weight: 900;
+}*/
+
+.description-hero {
+  width: 1800px;
+  max-width: 95%;
+  position: relative;
+  /*background-color: pink;*/
+  margin: 20px auto;
+  padding: 75px 0 100px;
+}
+
+.description-hero h2 {
+  width: 1100px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#jiak-simi-image {
+  background-image: url(images/jiak-simi.png);
+  height: 800px;
+  background-position: 50% 50%;
+  margin-top: -80px;
+  margin-bottom: -50px;
+}
+
+#hello-world-image {
+  background-image: url(images/helloworld.png);
+  height: 400px;
+  background-position: 50% 50%;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#tom-jerry-image {
+  background-image: url(images/tomjerry3.png);
+  height: 800px;
+  background-position: 50% 50%;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#queuer-image {
+  background-image: url(images/queuer.png);
+  height: 800px;
+  background-position: 50% 50%;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#yoda-speaks-image {
+  background-image: url(images/yoda2.png);
+  height: 480px;
+  background-position: 50% 50%;
+
 }
